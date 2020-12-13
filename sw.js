@@ -1,4 +1,4 @@
-const cacheName = 'course-pwa-v1';
+const cacheName = 'course-pwa-v2';
 
 const assetsToCache = [
     'index.html',
