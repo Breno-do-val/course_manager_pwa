@@ -1,11 +1,11 @@
 class App {
 
     constructor() {
+        this.#serviceWorker();
         this.#init();
     }
 
     #init() {
-       this.#serviceWorker();
     }
 
     #serviceWorker() {

@@ -1,6 +1,13 @@
 const cacheName = 'course-pwa-v2';
 
 const assetsToCache = [
+    'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',
+    'https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
+    'assets/styles/styles.css',
+    'assets/js/material.min.js',
+    'assets/js/app.js',
+    'form.html',
     'index.html',
     '/'
 ];
