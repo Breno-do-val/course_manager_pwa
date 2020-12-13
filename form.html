@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
   <link rel="manifest" href="manifest.json">
 </head>
 
@@ -31,8 +31,42 @@
         </nav>
       </div>
       <main class="mdl-layout__content mat-typography" style="text-align: center">
-        <ul>
-        </ul>
+        <form class="form" action="">
+
+          <div class="form__title">
+            Add a new course
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="title">
+            <label class="mdl-textfield__label" for="title">Title</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="description">
+            <label class="mdl-textfield__label" for="description">Description</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="number" id="duration">
+            <label class="mdl-textfield__label" for="duration">Duration (Hours)</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="link">
+            <label class="mdl-textfield__label" for="link">Link</label>
+          </div>
+
+          <label id="concluded-button"class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="concluded">
+            <input type="checkbox" id="concluded" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">Concluded</span>
+          </label>
+
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">add</i>
+          </button>
+
+        </form>
       </main>
     </div>
   </div>
