@@ -1,4 +1,4 @@
-const cacheName = 'course-pwa-v10';
+const cacheName = 'course-pwa-v11';
 
 const assetsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',
