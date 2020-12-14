@@ -1,4 +1,4 @@
-const cacheName = 'course-pwa-v3';
+const cacheName = 'course-pwa-v10';
 
 const assetsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',
@@ -14,7 +14,7 @@ const assetsToCache = [
 ];
 
 const removeOldCache = key => {
-    if(key !== cacheName) {
+    if (key !== cacheName) {
         return caches.delete(key);
     }
 };

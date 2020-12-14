@@ -31,7 +31,7 @@
         </nav>
       </div>
       <main class="mdl-layout__content mat-typography" style="text-align: center">
-        
+
         <form class="form" action="">
 
           <div class="form__title">
@@ -39,43 +39,72 @@
           </div>
 
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="title" name="title">
+            <input class="mdl-textfield__input" type="text" id="title" name="title" required>
             <label class="mdl-textfield__label" for="title">Title</label>
           </div>
 
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="description" name="description">
+            <input class="mdl-textfield__input" type="text" id="description" name="description" required>
             <label class="mdl-textfield__label" for="description">Description</label>
           </div>
 
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="number" id="duration" name="duration">
+            <input class="mdl-textfield__input" type="number" id="duration" name="duration" required>
             <label class="mdl-textfield__label" for="duration">Duration (Hours)</label>
           </div>
 
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="link" name="link">
+            <input class="mdl-textfield__input" type="text" id="link" name="link" required>
             <label class="mdl-textfield__label" for="link">Link</label>
           </div>
 
-          <label id="concluded-button"class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="concluded">
-            <input type="checkbox" id="concluded" class="mdl-checkbox__input">
+          <label id="concluded-button" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="concluded">
+            <input type="checkbox" id="concluded" class="mdl-checkbox__input" required>
             <span class="mdl-checkbox__label">Concluded</span>
           </label>
 
-          <button type="submit" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <button id="form-submit" type="submit" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
             <i class="material-icons">add</i>
           </button>
 
         </form>
-        
+
+        <hr />
         <div class="card">
-          
-        </div>
+          <div class="card__title">
+            Courses
+          </div>
+
+          <div class="card__data">
+            <div class="card__data--item">
+              <span class="card__data--sub">Title:</span>
+              <span>Node.js for begginers</span>
+            </div>
+            <div class="card__data--item">
+              <span class="card__data--sub">Description:</span>
+              <span>How to build Node.js applications</span>
+            </div>
+            <div class="card__data--item">
+              <span class="card__data--sub">Duration:</span>
+              <span>30<span>&nbsp;Horas</span></span>
+            </div>
+            <div class="card__data--item">
+              <span class="card__data--sub">Link:</span>
+              <span><a href="https://www.google.com" target="_blank">www.google.com</a></span>
+            </div>
+            <span class="card__data--item">
+              <span class="mdl-checkbox__label">Concluded:</span>
+              <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+            </span>
+            <span class="card__data--item">
+              <i class="material-icons">delete</i>
+            </span>
+          </div>
       </main>
     </div>
   </div>
   <script defer src="assets/js/material.min.js"></script>
   <script type="module" src="assets/js/app.js"></script>
 </body>
+
 </html>
