@@ -1,6 +1,6 @@
 export default class HtmlService {
 
-    constructor(courseService){
+    constructor(courseService) {
         this.courseService = courseService;
         this.#bindFormEvent();
     }
@@ -15,7 +15,7 @@ export default class HtmlService {
     }
 
     async addCourse(title, description, duration, link, concluded) {
-        const course = { title, description, duration, link, concluded: concluded};
+        const course = { title, description, duration, link, concluded: concluded };
         const courseId = await this.courseService.save(course);
         course.id = courseId;
     }
