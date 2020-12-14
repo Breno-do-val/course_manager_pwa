@@ -1,3 +1,6 @@
+import HtmlService from './HtmlService.js';
+import CourseService from './CourseService.js';
+
 class App {
 
     constructor() {
@@ -6,6 +9,8 @@ class App {
     }
 
     #init() {
+        new HtmlService(new CourseService());
+        console.log('auhauh')
     }
 
     #serviceWorker() {
