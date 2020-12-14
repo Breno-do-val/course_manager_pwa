@@ -26,6 +26,11 @@ export default class HtmlService {
         course.forEach(item => this.addToHtmlList(item));
     }
 
+    async deleteCourse(courseId, div) {
+        await this.courseService.delete(courseId);
+        div.remove();
+    }
+
     checkedBox() {
         let concludedValue = document.querySelector('#concluded').checked;
         return concludedValue;
@@ -54,11 +59,18 @@ export default class HtmlService {
                                 <span class="mdl-checkbox__label">Concluded:</span>
                                 <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ${checkedCourse}>
                             </span>
-                            <span class="card__data--item">
+                            <span id="delete-item" class="card__data--item">
                                 <i class="material-icons">delete</i>
                             </span>
                         </div>`
         let card = document.querySelector('.card__title');
         card.insertAdjacentHTML("afterend", courseItem);
+        let courseDiv = document.querySelector('.card__data');
+        let button = document.querySelector('#delete-item');
+
+        button.addEventListener('click', event => {
+            event.stopPropagation();
+            this.deleteCourse(course.id, courseDiv);
+        })
     }
 }
