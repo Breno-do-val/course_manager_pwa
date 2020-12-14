@@ -1,4 +1,4 @@
-const cacheName = 'course-pwa-v2';
+const cacheName = 'course-pwa-v3';
 
 const assetsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',
@@ -8,7 +8,7 @@ const assetsToCache = [
     'assets/styles/styles.css',
     'assets/js/material.min.js',
     'assets/js/app.js',
-    'form.html',
+    'about.html',
     'index.html',
     '/'
 ];

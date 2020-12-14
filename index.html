@@ -27,13 +27,51 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Course Manager</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="form.html">Add Course</a>
+          <a class="mdl-navigation__link" href="about.html">About</a>
         </nav>
       </div>
       <main class="mdl-layout__content mat-typography" style="text-align: center">
-        <ul>
+        
+        <form class="form" action="">
 
-        </ul>
+          <div class="form__title">
+            Add a new course
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="title" name="title">
+            <label class="mdl-textfield__label" for="title">Title</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="description" name="description">
+            <label class="mdl-textfield__label" for="description">Description</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="number" id="duration" name="duration">
+            <label class="mdl-textfield__label" for="duration">Duration (Hours)</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="link" name="link">
+            <label class="mdl-textfield__label" for="link">Link</label>
+          </div>
+
+          <label id="concluded-button"class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="concluded">
+            <input type="checkbox" id="concluded" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">Concluded</span>
+          </label>
+
+          <button type="submit" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">add</i>
+          </button>
+
+        </form>
+        
+        <div class="card">
+          
+        </div>
       </main>
     </div>
   </div>
