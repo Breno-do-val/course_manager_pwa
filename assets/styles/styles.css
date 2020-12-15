@@ -66,6 +66,14 @@ html {
     font-weight: bolder;
 }
 
+#delete-item {
+    cursor: pointer;
+}
+
+#delete-item:hover {
+    transform: translateY(-3%);
+}
+
 @media only screen and (max-width: 600px) {
     .card .card__data {
         display: flex;
