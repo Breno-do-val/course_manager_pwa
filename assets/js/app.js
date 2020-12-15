@@ -10,7 +10,6 @@ class App {
 
     #init() {
         new HtmlService(new CourseService());
-        console.log('auhauh')
     }
 
     #serviceWorker() {
@@ -18,7 +17,7 @@ class App {
             navigator.serviceWorker
                 .register("sw.js")
                 .then(_ => console.log("[Service Worker] Registered!"))
-                .catch(_=> console.error("[Service Worker] Failed"))
+                .catch(_ => console.error("[Service Worker] Failed"))
         }
     }
 }
